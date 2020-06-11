@@ -1,0 +1,310 @@
+body{
+    background-color:white;
+    
+    color: brown;
+       background-position: center;
+    background-size:cover;
+    width: auto;
+    height: auto;
+    
+}
+header{
+    
+    background-position: center;
+    background-color:blueviolet;
+   top: 0;
+   position: relative;
+   
+    padding:20px;
+    margin-left: 0;
+    height: auto;
+    width: 100%;
+   text-align: center;
+   font-size: inherit;
+    text-transform: uppercase;
+}
+header a{
+    color:red;
+    text-decoration: none;
+    
+    margin-top: 0;
+
+
+}
+header .logo a{
+    background-image: url("images/icon.JPG");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200px;
+    display: inline-block;
+    
+    position: relative;
+    top: 20px;
+    height: 80px;
+    width: 200px;
+    margin: 0px 20px;
+    
+}
+header .mobile{
+    display: none;
+}
+
+
+footer{
+    background-color:blueviolet ;
+    color: white;
+   position: fixed;
+    bottom: 0;
+    text-align: center;
+    padding:10px;
+    width: 100%;
+    
+}
+ul{
+    list-style: none;
+    margin: 0px;
+}
+
+li{
+    display: inline-block;
+    border-radius: 3px;
+    background-color:transparent;
+    padding:10px 40px;
+    
+  
+    text-transform: uppercase;
+} 
+
+li:hover{
+    background-color:gray  ;
+    
+}
+ .logo:hover{
+    background-color:transparent  ;
+ }
+*{
+    margin: 0px;
+    padding: 0px;
+    
+ }
+#sidebar{
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    top: 15px;
+    
+}
+
+#sidebar ol {
+    list-style: none;
+    height: 100%;
+    
+    
+}
+#sidebar ol ul{
+    background-color: transparent;
+    
+    width: 150px;
+    text-transform: uppercase;
+    height: 20px;
+    line-height: 40px;
+    text-align: left;
+    padding: 10px  20px;
+    color:red;
+    margin-left: 5px;
+    font-size: 15px;
+    float: left;
+    position: relative;
+    transition: all 500ms linear ;
+    }
+    
+#sidebar ol ul:hover{
+ background-color: burlywood;
+ 
+ 
+}
+#sidebar ol ol{
+    display: none;
+}
+#sidebar ol ul:hover>ol{
+    display: block;
+    position: relative;
+    
+ top:-10px;
+}
+#sidebar ol ol ol{
+    margin-left:160px;
+    margin-top: -40px;
+    top:20px;
+    position: relative;
+}
+#sidebar .arrow-ol ol a:before{
+    content: '\203A';
+}
+
+
+#sidebar  .arrow1:after{
+    content: '\203A';
+    float: right ;
+    margin-right: 20px ;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    
+}
+#sidebar ul:hover .arrow1:after{
+    content: '\2039';
+}
+
+li:first-child{
+    margin-left: 0;
+    
+}
+
+.homepic{
+    width: 1280px;
+    min-height: 500px ;
+    background: #fff;
+    margin: 70px auto 0;
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+   
+}
+.homepic .box{
+    overflow: hidden;
+    position: relative;
+    width: 580px; 
+    height: 408px;
+    background: #ff0;
+    margin: 10px;
+    top:50px;
+    
+    box-sizing: border-box;
+    display: inline-block;
+
+}
+.homepic .box .imgbox{
+    position: relative;
+    
+}
+.homepic .box .imgbox img{
+    max-width: 100%;
+    transition: transform 2s; 
+}
+.homepic .box:hover .imgbox img{
+    transform: scale(1.2);
+}
+.homepic .box .details{
+    position: absolute;
+    text-transform: capitalize;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right:10px;
+    background:rgba(19, 19, 19, 0.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+    color: white;
+}
+.homepic .box:hover .details{
+    transform: scaleY(1);
+    
+}
+.homepic .box .details .homecontent{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: left;
+    padding: 15px;
+    color: #fff;
+}
+
+
+.homepic .box .details .homecontent h2{
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    color: white;
+}
+.homepic .box .details .homecontent p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 20px;
+    color:white;
+    
+}
+.homepic .box .details .homecontent h3{
+    color: white;
+}
+.hometext {
+    width: 50%;
+    scale: 1.0;
+    margin-right: 0px;
+    text-align: justify;
+    border-radius: 3px;
+    padding:240px 20px;
+    color:brown;
+}
+
+a{
+    text-decoration: none;
+
+}
+a:hover{
+    text-decoration: underline;
+    
+}
+ol{
+    display:-moz-inline-box;
+
+    border-radius: 3px;
+    margin-left: 0;
+    padding: 0;
+    width: auto;
+    background-color: transparent;
+      text-transform: capitalize;
+}
+
+.feature {
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+    width: auto;
+    
+}
+
+.feature figure{
+    margin: 10px;
+    text-align: center;
+    width:"200px";
+}
+.feature figure img{
+    border-radius: 30%;
+    padding: 40px;
+    
+}
+@media screen and (max-width:715px){
+    header .mobile{
+        display: inline-block;
+    }
+}
+@media screen and (max-width:715px){
+    header .desktop{
+        display: none;
+    }
+}
+@media screen and (min-width:400px){
+    .feature{
+        background-color:wheat;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .feature{
+        background-color:wheat;
+        background-size: cover;
+        background-position: center;
+    }
+}

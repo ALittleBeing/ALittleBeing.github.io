@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+body{
+    margin: 0;
+    padding: 0;
+    margin-bottom:0px;
+
+}
+section{
+    padding:10px 10px ;
+          
+}
+.picfeature{
+    display: flex;
+    margin: 10px;
+    margin-left: 50px;
+    flex-direction: row;
+}
+
+.Box {
+    position: relative;
+    width: 300px;
+   
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+    box-shadow: 0 5px 15px rgba(0,0,0,5);
+    transition: .5s;
+    margin: 50px;
+}
+.Box:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 5px 50px rgba(0,0,0,5);
+    
+}
+.Box .picbox{
+    position: relative;
+    
+    
+}
+.Box .picbox img{
+    transition: .5s;
+
+    
+}
+.Box:hover .picbox img{
+    opacity: .5;
+    transform: translateY(20px);
+    
+}
+.Box .imgcontent{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    transition: .5s;
+    opacity: 0;
+    bottom: -20px;
+}
+.Box:hover .imgcontent{
+   bottom: 0;
+    opacity: 1;
+}
+.Box .imgcontent h3{
+    margin:-20px;
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+
+}
+.Box .imgcontent h4{
+    margin:-25px;
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+}
+.Box .imgcontent p{
+    font-size: 18px;
+    color: white;
+    font-weight: 200px;
+}
+.Box .imgcontent .btnD{
+    border: none;
+    background: #fe1b70;
+    font-size: 18px;
+    padding: 0px 20px;
+    font-weight: 200px;
+    transition: .5s;
+}
+.Box .imgcontent .btnD:hover{
+    background: blueviolet;
+    color: #fff;
+}
+.mycontent{
+    color: brown;
+}
+ 
+.cntbtn1{
+    color:royalblue;
+    margin: 20px;
+    background:white;
+    border-radius: 10px;
+    
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 50px;
+    background-position-y: center;
+    justify-content: center;
+    
+}
+.cntbtn{
+    padding: 0 50px;
+    margin: 20px;
+    background:white;
+    border-radius: 10px;
+    height: 60px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 0px;
+    background-position-y: center;
+    justify-content: center;
+    
+}
+
+.cntbtn1:hover{
+    background-color: rgba(0,0,0,5);
+}
+.cntbtn:hover{
+    background-color: rgba(0,0,0,5);
+}
+.cntbtn h4{
+color: royalblue;
+}
